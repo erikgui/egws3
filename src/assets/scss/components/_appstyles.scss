@@ -1,0 +1,48 @@
+body {
+    background: linear-gradient(45deg, #6f749e 0%, #9a8daf 31%, #d0a8b9 58%, #f8bbb1 80%, #fde6b1 100%);
+    color: #FFFFFF;
+}
+
+section {
+    min-height: 100vh;
+}
+
+.splash {
+    text-align: center;
+
+    .splash-sub-header {
+        @include breakpoint(small) {
+            font-size: 1.0rem;
+        }
+        @include breakpoint(medium) {
+            font-size: 1.4rem;
+        }
+        @include breakpoint(large) {
+            font-size: 1.7rem;
+        }
+    }
+
+    .splash-down-arrow {
+        position: relative;
+        @include breakpoint(small) {
+            width: 10px;
+            height: 10px;
+            top: 50px;
+        }
+        @include breakpoint(medium up) {
+            width: 30px;
+            height: 30px;
+            top: 150px;
+        }
+
+        transform: rotate(45deg);
+        border: solid #FFFFFF;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+    }
+}
+
+.call-out {
+    color: wheat;
+}
